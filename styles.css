@@ -1,0 +1,161 @@
+/* BASE & TYPOGRAPHIE */
+        :root {
+            --color-primary: #007bff; /* Bleu Web3 */
+            --color-secondary: #28a745; /* Vert pour le CTA */
+            --color-background: #f8f9fa; /* Fond clair */
+            --color-text: #343a40; /* Texte sombre */
+            --color-dark-bg: #e9ecef; /* Fond des blocs */
+        }
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.7;
+            color: var(--color-text);
+            background-color: var(--color-background);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        #content {
+            max-width: 800px; /* Augmentation de la largeur */
+            padding: 30px 20px;
+            background-color: white;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+        }
+
+        /* TITRES */
+        .title {
+            font-family: 'Oswald', sans-serif;
+            text-align: center;
+            color: var(--color-primary);
+            font-size: 2.5em;
+            margin-bottom: 0.5em;
+            border-bottom: 4px solid var(--color-primary);
+            padding-bottom: 10px;
+        }
+        h2 {
+            font-family: 'Oswald', sans-serif;
+            color: var(--color-text);
+            font-size: 1.8em;
+            margin-top: 40px;
+            border-left: 5px solid var(--color-primary);
+            padding-left: 10px;
+        }
+        h3 {
+            font-family: 'Oswald', sans-serif;
+            color: var(--color-primary);
+            font-size: 1.4em;
+            margin-top: 30px;
+            border-bottom: 1px dashed var(--color-dark-bg);
+            padding-bottom: 5px;
+        }
+        h4 {
+            font-size: 1.1em;
+            color: #5a5a5a;
+        }
+
+        /* TABLE DES MATIÈRES */
+        #table-of-contents {
+            background-color: var(--color-dark-bg);
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+        }
+        #table-of-contents h2 {
+            margin-top: 0;
+            border-left: none;
+            padding-left: 0;
+            text-align: center;
+            color: var(--color-text);
+        }
+        #text-table-of-contents ul {
+            list-style: none;
+            padding-left: 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+        }
+        #text-table-of-contents li a {
+            color: var(--color-primary);
+            text-decoration: none;
+            font-weight: bold;
+            display: block;
+            background-color: white;
+            padding: 8px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+            border: 1px solid var(--color-primary);
+        }
+        #text-table-of-contents li a:hover {
+            background-color: var(--color-primary);
+            color: white;
+        }
+
+        /* BLOCS SPÉCIAUX (AVERTISSEMENT & CTA) */
+        .disclaimer-box {
+            border: 3px solid #dc3545; /* Rouge pour alerte/avertissement */
+            padding: 20px;
+            margin-top: 20px;
+            background-color: #fcebebd3;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+        .cta-box {
+            text-align: center;
+            padding: 30px;
+            margin: 40px 0;
+            background-color: var(--color-secondary);
+            color: white;
+            border-radius: 8px;
+        }
+        .cta-box p {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+        .cta-button {
+            display: inline-block;
+            background-color: #ffc107; /* Jaune vif */
+            color: var(--color-text);
+            font-size: 1.4em;
+            font-weight: bold;
+            padding: 15px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+            text-transform: uppercase;
+        }
+        .cta-button:hover {
+            background-color: #e0a800;
+        }
+
+        /* LISTES ET LIENS */
+        ul, ol {
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        a {
+            color: var(--color-primary);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        a:hover {
+            color: #0056b3;
+            text-decoration: underline;
+        }
+        
+        /* Nettoyage du postamble Org Mode */
+        #postamble {
+            text-align: center;
+            font-size: 0.8em;
+            color: #aaa;
+            margin-top: 50px;
+            border-top: 1px solid #ddd;
+            padding-top: 10px;
+        }
+        #postamble p {
+            display: inline;
+            margin: 0 10px;
+        }
